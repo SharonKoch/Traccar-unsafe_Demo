@@ -78,7 +78,7 @@
          if (notificator == null) {
 @@ -76,1 +76,1 @@
 -            LOGGER.warn("No notificator configured for type : " + type);
-+LOGGER.warn("No notificator configured for type : " + type.replaceAll("[^a-zA-Z0-9 _-]", ""));
++              LOGGER.warn("No notificator configured for type : " + type.replaceAll("[^a-zA-Z0-9 _-]", ""));
              return NULL_NOTIFICATOR;
          }
          return notificator;
