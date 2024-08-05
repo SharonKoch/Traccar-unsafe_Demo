@@ -91,9 +91,7 @@
                  if (results.hasMoreElements()) {
                      results.nextElement();
                      if (results.hasMoreElements()) {
-@@ -91,1 +91,1 @@
--                        LOGGER.warn("Matched multiple users for the accountName: " + accountName);
-+                          LOGGER.warn("Matched multiple users for the accountName: " + accountName.replaceAll("[^a-zA-Z0-9 _-]", ""));
+                         LOGGER.warn("Matched multiple users for the accountName: " + accountName);
                          return false;
                      }
                      return true;
@@ -125,7 +123,9 @@
          if (results.hasMoreElements()) {
              searchResult = results.nextElement();
              if (results.hasMoreElements()) {
-                 LOGGER.warn("Matched multiple users for the accountName: " + accountName);
+@@ -123,1 +123,1 @@
+-                LOGGER.warn("Matched multiple users for the accountName: " + accountName);
++                  LOGGER.warn("Matched multiple users for the accountName: " + accountName.replaceAll("[^a-zA-Z0-9 _-]", ""));
                  return null;
              }
          }
