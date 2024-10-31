@@ -188,7 +188,7 @@
         <dependency>
             <groupId>org.mnode.ical4j</groupId>
             <artifactId>ical4j</artifactId>
-            <version>2.0.5</version> <!-- UPGRADE -->
+            <version>3.0.0</version> <!-- UPGRADE -->
         </dependency>
         <dependency>
             <groupId>com.fizzed</groupId>
